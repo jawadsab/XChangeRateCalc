@@ -41,6 +41,7 @@ const fetchSymbols = async () => {
 function calculate() {
     const currency_one = currencyEl_one.value;
     const currency_two = currencyEl_two.value;
+    console.log({currency_one,currency_two})
     const fetchRateURL = `https://api.exchangerate-api.com/v4/latest/${currency_one}`;
     fetch(fetchRateURL)
     .then(res => res.json())
@@ -62,7 +63,7 @@ swap.addEventListener("click",() => {
     const temp = currencyEl_one.value;
     currencyEl_one.value = currencyEl_two.value;
     currencyEl_two.value = temp;
-    caclulate();
+    calculate();
 })
 
 
