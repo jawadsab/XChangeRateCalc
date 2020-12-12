@@ -26,7 +26,8 @@ body {
 .banner i {
     font-size: 3.5rem;
     margin-left: 40%;
-    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
     color: #87A330;
 }
 .banner h1, .banner h3 {
@@ -75,4 +76,11 @@ span {
     font-weight: bold;
     text-align: center;
     margin-top: 10px;
+}
+input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    border:none;
+    border-radius: 5px;
+    margin: 10px;
 }
